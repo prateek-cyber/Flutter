@@ -1,3 +1,5 @@
+import 'package:first_app/pages/home_page.dart';
+import 'package:first_app/utils/routes.dart';
 import "package:flutter/material.dart";
 
 class LoginPage extends StatelessWidget{
@@ -10,9 +12,11 @@ class LoginPage extends StatelessWidget{
         //    fontWeight: FontWeight.bold,
         //  ),),),
         color: Colors.white,
+        child: SingleChildScrollView(
         child: Column(
           children: [
             Image.asset("assets/images/login_image.png",fit: BoxFit.cover,),
+            
             SizedBox(
               height: 20.0,
             ),
@@ -42,7 +46,7 @@ class LoginPage extends StatelessWidget{
             ),
 
             ElevatedButton(onPressed: (){
-              
+              Navigator.pushNamed(context, MyRoutes.homepage);
             },
 
             child: Text("login"),
@@ -55,6 +59,7 @@ class LoginPage extends StatelessWidget{
         
         )
         
-       );
+       ),
+         );
      }
 }
