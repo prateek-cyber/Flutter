@@ -3,9 +3,9 @@ import 'package:first_app/pages/login_page.dart';
 import 'package:first_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 void main(){
-  runApp(myApp());
+  runApp(MyApp());
 }
-class myApp extends StatelessWidget{
+class MyApp extends StatelessWidget{
   int days = 30;
   String name = "Prateek";
   Widget build(BuildContext context){
