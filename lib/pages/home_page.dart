@@ -1,3 +1,4 @@
+import 'package:first_app/pages/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget{
@@ -11,9 +12,9 @@ class HomePage extends StatelessWidget{
              child: Text("welcome to catalog page"),
              
              ),
-     
-           drawer: const Drawer(child: text),
-    );
+             drawer: MyDrawer(),
+          ); 
+    
 
     
   }
